@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sparqlist:
+    image: ghcr.io/dbcls/sparqlist:latest
+    environment:
+      - ADMIN_PASSWORD=fP2ypvhci7ewtg6ZisBbRz7CEEqLaTm0
+    volumes:
+      - ./sparqlist:/app/repository
+    ports:
+      - "3000:3000"
